@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practical Work</title>
+    <meta name="author" content="Tomas Dutkus">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="practical work">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Sintony" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="nav nav-top">
+        <div class="container flex">
+          <a href="#"><img src="img/logo.png" alt="Logotype"></a>
+          <ul class="menu flex">
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SOCIAL</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <section class="intro flex">
+        <div class="text">
+          <h1>Premium Quality & Tradition</h1>
+          <h3>Since 1978</h3>
+        </div>
+        <a href="#" id="js-scroll" class="arrow"><i class="fas fa-chevron-down"></i></a>
+      </section>
+      <section class="team">
+        <div class="container">
+          <div class="title">
+            <h2>Meet Our Team</h2></div>
+            <div class="flex">
+              <div class="member">
+                <img src="img/member1.jpg" alt="Member">
+                <h4>Dennis Kim</h4>
+                <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
+              </div>
+              <div class="member">
+                <img src="img/member2.jpg" alt="Member">
+                <h4>Sara McGoy</h4>
+                <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
+              </div>
+              <div class="member">
+                <img src="img/member3.jpg" alt="Member">
+                <h4>Emily Porter</h4>
+                <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="carousel">
+          <div class="container">
+              <div class="feed flex">
+                  <div class="instagram hidden">
+                      <img src="img/instagram-1.jpg" alt="">
+                  </div>
+                  <div class="instagram hidden">
+                      <img src="img/instagram-2.jpg" alt="">
+                  </div>
+                  <div class="instagram hidden">
+                      <img src="img/instagram-3.jpg" alt="">
+                  </div>
+                  <div class="instagram hidden">
+                      <img src="img/instagram-4.jpg" alt="">
+                  </div>
+              </div>
+              <div class="button-wrapper">
+                  <a href="#" class="button"><i class="fab fa-instagram"></i>
+                      <span>Follow us on instagram</span></a>
+              </div>
+          </div>
+      </section>
+      <section class="contact">
+          <div class="title">
+              <h2>Contact Us</h2>
+          </div>
+          <div class="container flex">
+              <div class="form">
+                  <form id="contact-form">
+                      <input type="text" name="name" placeholder="Full name">
+                      <input type="text" name="email" placeholder="E-mail" value="contact@email.com">
+                      <textarea name="message" placeholder="Message"></textarea>
+                      <button type="submit">Send</button>
+                  </form>
+              </div>
+              <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.978805935047!2d-73.98344688459348!3d40.7624908793264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f85f98272f%3A0x7ab3fbafc075fad7!2s811+7th+Ave%2C+New+York%2C+NY+10019%2C+Jungtin%C4%97s+Valstijos!5e0!3m2!1slt!2slt!4v1532418938855" width="400" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <p class="adress">811 7th Avenue 53rd Street New York, 10019, United States</p>
+              </div>
+          </div>
+      </section>
+
+  </main>
+
+  <footer class="footer">
+
+      <nav class="nav nav-bot">
+          <ul class="menu flex">
+              <li>
+                  <a href="#">Home</a>
+              </li>
+              <li>
+                  <a href="#">About us</a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="img/logo-pink.png" alt="Logotype pink">
+                  </a>
+              </li>
+              <li>
+                  <a href="#">Social</a>
+              </li>
+              <li>
+                  <a href="#">Contact</a>
+              </li>
+          </ul>
+
+          <ul class="menu social flex">
+              <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+              </li>
+          </ul>
+      </nav>
+
+      <p class="copyright">2015, All Rights Reserved.</p>
+
+  </footer>
+  <script>
+
+     $(document).ready(function(){
+       $(".navigation li").on("click",function(){
+         $(".navigation li").removeClass("active"),$(this).addClass("active")}),
+         $("#js-scroll").on("click",function(){
+           $("html, body").animate({scrollTop:$(".team").offset().top},1e3)}),$(".member i").on("click",function(){clickCounter++,$(".member").length==clickCounter&&$("section.team").animate({height:0,opacity:0,padding:0},1e3,function(){$(this).remove()}),
+           $(this).parent().animate({opacity:0},500,function(){$(this).addClass("hidden")})}),$("#follow").on("click",function(){$(".instagram").toggleClass("small")}),$("#contact-form").on("submit",function(t){t.preventDefault(),
+             $("section.contact").animate({height:0,opacity:0,padding:0},1e3,function(){$(this).remove()}
+       )})});
+  </script>
+
+  </body>
+</html>
